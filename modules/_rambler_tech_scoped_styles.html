@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>registerRoot | @rambler-tech/scoped-styles</title><meta name="description" content="Web Components tools"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><link rel="stylesheet" href="../assets/custom.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>@rambler-tech/scoped-styles - v0.1.0 | Documentation</title><meta name="description" content="Web Components tools"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><link rel="stylesheet" href="../assets/custom.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
 <div class="tsd-toolbar-contents container">
 <div class="table-cell" id="tsd-search" data-base="..">
 <div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="#icon-search"></use></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
@@ -12,26 +12,49 @@
 <div class="col-content">
 <div class="tsd-page-title">
 <ul class="tsd-breadcrumb">
-<li><a href="../modules.html">@rambler-tech/scoped-styles</a></li>
-<li><a href="registerRoot.html">registerRoot</a></li></ul>
-<h1>Function registerRoot</h1></div>
-<section class="tsd-panel">
-<ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="registerRoot"><span class="tsd-kind-call-signature">register<wbr/>Root</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">root</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#registerRoot" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Register scoped root and inject styles</p>
-<pre><code class="language-tsx"><span class="hl-3">class</span><span class="hl-1"> </span><span class="hl-4">App</span><span class="hl-1"> </span><span class="hl-3">extends</span><span class="hl-1"> </span><span class="hl-4">HTMLElement</span><span class="hl-1"> {</span><br/><span class="hl-1">  </span><span class="hl-0">connectedCallback</span><span class="hl-1">() {</span><br/><span class="hl-1">    </span><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-5">shadowRoot</span><span class="hl-1"> = </span><span class="hl-3">this</span><span class="hl-1">.</span><span class="hl-0">attachShadow</span><span class="hl-1">({</span><span class="hl-6">mode:</span><span class="hl-1"> </span><span class="hl-2">&#39;open&#39;</span><span class="hl-1">})</span><br/><span class="hl-1">    </span><span class="hl-0">registerRoot</span><span class="hl-1">(</span><span class="hl-6">shadowRoot</span><span class="hl-1">)</span><br/><span class="hl-1">  }</span><br/><span class="hl-1">}</span>
+<li><a href="../index.html">Documentation</a></li>
+<li><a href="_rambler_tech_scoped_styles.html">@rambler-tech/scoped-styles</a></li></ul>
+<h1>Module @rambler-tech/scoped-styles - v0.1.0</h1></div>
+<section class="tsd-panel tsd-typography"><a id="md:web-components-tools" class="tsd-anchor"></a><h1><a href="#md:web-components-tools">Web Components tools</a></h1><a id="md:packages" class="tsd-anchor"></a><h2><a href="#md:packages">Packages</a></h2><ul>
+<li><a href="packages/scoped-styles">@rambler-tech/scoped-styles</a></li>
+<li><a href="packages/widget-element">@rambler-tech/widget-element</a></li>
+</ul>
+<a id="md:contributing" class="tsd-anchor"></a><h2><a href="#md:contributing">Contributing</a></h2><a id="md:dev-environment" class="tsd-anchor"></a><h3><a href="#md:dev-environment">Dev environment</a></h3><a id="md:start" class="tsd-anchor"></a><h4><a href="#md:start">Start</a></h4><p>To start development you need install <code>yarn</code> and deps:</p>
+<pre><code class="language-sh"><span class="hl-0">yarn</span><span class="hl-1"> </span><span class="hl-2">install</span>
 </code><button>Copy</button></pre>
-</div>
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">root</span>: <span class="tsd-signature-type ">HTMLElement</span><span class="tsd-signature-symbol"> = document.head</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
-<ul>
-<li>Defined in <a href="https://github.com/rambler-digital-solutions/web-components/blob/c52b203/packages/scoped-styles/index.ts#L67">index.ts:67</a></li></ul></aside></li></ul></section></div>
+<a id="md:testing" class="tsd-anchor"></a><h4><a href="#md:testing">Testing</a></h4><p>We have a test suite consisting of a bunch of unit tests to verify utils keep working as expected. Test suit is run in CI on every commit.</p>
+<p>To run tests:</p>
+<pre><code class="language-sh"><span class="hl-0">yarn</span><span class="hl-1"> </span><span class="hl-2">test</span>
+</code><button>Copy</button></pre>
+<p>To run tests in watch mode:</p>
+<pre><code class="language-sh"><span class="hl-0">yarn</span><span class="hl-1"> </span><span class="hl-2">test:watch</span>
+</code><button>Copy</button></pre>
+<a id="md:code-quality" class="tsd-anchor"></a><h4><a href="#md:code-quality">Code quality</a></h4><p>To run linting the codebase:</p>
+<pre><code class="language-sh"><span class="hl-0">yarn</span><span class="hl-1"> </span><span class="hl-2">lint</span>
+</code><button>Copy</button></pre>
+<p>To check typings:</p>
+<pre><code class="language-sh"><span class="hl-0">yarn</span><span class="hl-1"> </span><span class="hl-2">typecheck</span>
+</code><button>Copy</button></pre>
+<p>To check bundle size:</p>
+<pre><code class="language-sh"><span class="hl-0">yarn</span><span class="hl-1"> </span><span class="hl-2">sizecheck</span>
+</code><button>Copy</button></pre>
+<p>To check licenses:</p>
+<pre><code class="language-sh"><span class="hl-0">yarn</span><span class="hl-1"> </span><span class="hl-2">licenselint</span>
+</code><button>Copy</button></pre>
+<a id="md:publish" class="tsd-anchor"></a><h3><a href="#md:publish">Publish</a></h3><p>To bump version of changed packages and generate changelog run:</p>
+<pre><code class="language-sh"><span class="hl-0">yarn</span><span class="hl-1"> </span><span class="hl-2">release</span>
+</code><button>Copy</button></pre>
+<a id="md:license" class="tsd-anchor"></a><h2><a href="#md:license">License</a></h2><p>MIT</p>
+</section>
+<section class="tsd-panel-group tsd-index-group">
+<section class="tsd-panel tsd-index-panel">
+<h3 class="tsd-index-heading uppercase">Index</h3>
+<section class="tsd-index-section">
+<h3 class="tsd-index-heading">Functions</h3>
+<div class="tsd-index-list"><a href="../functions/_rambler_tech_scoped_styles.registerRoot.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>register<wbr/>Root</span></a>
+<a href="../functions/_rambler_tech_scoped_styles.registerStyles.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>register<wbr/>Styles</span></a>
+<a href="../functions/_rambler_tech_scoped_styles.unregisterRoot.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>unregister<wbr/>Root</span></a>
+</div></section></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -43,18 +66,38 @@
 <ul id="tsd-filter-options">
 <li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li></ul></form></div>
 <div class="tsd-theme-toggle">
-<h4 class="uppercase">Theme</h4><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div></div>
+<h4 class="uppercase">Theme</h4><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
+<details open class="tsd-index-accordion tsd-page-navigation"><summary class="tsd-accordion-summary">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="#icon-chevronDown"></use></svg>On This Page</h3></summary>
+<div class="tsd-accordion-details">
+<ul>
+<li>
+<ul>
+<li><a href="#md:web-components-tools"><span>Web <wbr/>Components tools</span></a></li>
+<li>
+<ul>
+<li><a href="#md:packages"><span>Packages</span></a></li>
+<li><a href="#md:contributing"><span>Contributing</span></a></li>
+<li>
+<ul>
+<li><a href="#md:dev-environment"><span>Dev environment</span></a></li>
+<li>
+<ul>
+<li><a href="#md:start"><span>Start</span></a></li>
+<li><a href="#md:testing"><span>Testing</span></a></li>
+<li><a href="#md:code-quality"><span>Code quality</span></a></li></ul></li>
+<li><a href="#md:publish"><span>Publish</span></a></li></ul></li>
+<li><a href="#md:license"><span>License</span></a></li></ul></li></ul></li></ul></div></details></div>
 <div class="site-menu">
-<nav class="tsd-navigation"><a href="../modules.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1"></use></svg><span>@rambler-tech/scoped-styles</span></a>
+<nav class="tsd-navigation"><a href="../index.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1"></use></svg><span>Documentation</span></a>
 <ul class="tsd-small-nested-navigation" id="tsd-nav-container" data-base="..">
-<li><a href="registerRoot.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg>registerRoot</a></li>
-<li><a href="registerStyles.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg>registerStyles</a></li>
-<li><a href="unregisterRoot.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg>unregisterRoot</a></li></ul></nav></div></div></div>
+<li><a href="_rambler_tech_scoped_styles.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>@rambler-tech/scoped-styles - v0.1.0</a></li>
+<li><a href="_rambler_tech_widget_element.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>@rambler-tech/widget-element - v0.0.0</a></li></ul></nav></div></div></div>
 <div class="tsd-generator">
 <p style="line-height: 28px;">Generated using <a href="https://typedoc.org/" rel="noopener" target="_blank">TypeDoc</a><br>
             <span id="generation-date"></span>
             <script>
-                window.GENERATION_DATE = 1721509325192;
+                window.GENERATION_DATE = 1721509726848;
 
                 (() => {
                     
