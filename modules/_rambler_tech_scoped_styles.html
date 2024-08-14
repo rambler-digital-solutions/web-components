@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>@rambler-tech/scoped-styles - v0.1.0 | Documentation</title><meta name="description" content="Web Components tools"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><link rel="stylesheet" href="../assets/custom.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>@rambler-tech/scoped-styles - v0.2.0 | Documentation</title><meta name="description" content="Web Components tools"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><link rel="stylesheet" href="../assets/custom.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
 <div class="tsd-toolbar-contents container">
 <div class="table-cell" id="tsd-search" data-base="..">
 <div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="#icon-search"></use></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
@@ -14,37 +14,13 @@
 <ul class="tsd-breadcrumb">
 <li><a href="../index.html">Documentation</a></li>
 <li><a href="_rambler_tech_scoped_styles.html">@rambler-tech/scoped-styles</a></li></ul>
-<h1>Module @rambler-tech/scoped-styles - v0.1.0</h1></div>
-<section class="tsd-panel tsd-typography"><a id="md:web-components-tools" class="tsd-anchor"></a><h1><a href="#md:web-components-tools">Web Components tools</a></h1><a id="md:packages" class="tsd-anchor"></a><h2><a href="#md:packages">Packages</a></h2><ul>
-<li><a href="packages/scoped-styles">@rambler-tech/scoped-styles</a></li>
-<li><a href="packages/widget-element">@rambler-tech/widget-element</a></li>
-</ul>
-<a id="md:contributing" class="tsd-anchor"></a><h2><a href="#md:contributing">Contributing</a></h2><a id="md:dev-environment" class="tsd-anchor"></a><h3><a href="#md:dev-environment">Dev environment</a></h3><a id="md:start" class="tsd-anchor"></a><h4><a href="#md:start">Start</a></h4><p>To start development you need install <code>yarn</code> and deps:</p>
-<pre><code class="language-sh"><span class="hl-0">yarn</span><span class="hl-1"> </span><span class="hl-2">install</span>
+<h1>Module @rambler-tech/scoped-styles - v0.2.0</h1></div>
+<section class="tsd-panel tsd-typography"><a id="md:scoped-styles" class="tsd-anchor"></a><h1><a href="#md:scoped-styles">Scoped Styles</a></h1><p>Using css modules in Shadow DOM</p>
+<a id="md:install" class="tsd-anchor"></a><h2><a href="#md:install">Install</a></h2><pre><code><span class="hl-3">npm</span><span class="hl-1"> </span><span class="hl-3">install</span><span class="hl-1"> -</span><span class="hl-4">D</span><span class="hl-1"> @</span><span class="hl-3">rambler</span><span class="hl-1">-</span><span class="hl-3">tech</span><span class="hl-1">/</span><span class="hl-3">scoped</span><span class="hl-1">-</span><span class="hl-3">styles</span>
 </code><button>Copy</button></pre>
-<a id="md:testing" class="tsd-anchor"></a><h4><a href="#md:testing">Testing</a></h4><p>We have a test suite consisting of a bunch of unit tests to verify utils keep working as expected. Test suit is run in CI on every commit.</p>
-<p>To run tests:</p>
-<pre><code class="language-sh"><span class="hl-0">yarn</span><span class="hl-1"> </span><span class="hl-2">test</span>
+<p>or</p>
+<pre><code><span class="hl-3">yarn</span><span class="hl-1"> </span><span class="hl-3">add</span><span class="hl-1"> -</span><span class="hl-4">D</span><span class="hl-1"> @</span><span class="hl-3">rambler</span><span class="hl-1">-</span><span class="hl-3">tech</span><span class="hl-1">/</span><span class="hl-3">scoped</span><span class="hl-1">-</span><span class="hl-3">styles</span>
 </code><button>Copy</button></pre>
-<p>To run tests in watch mode:</p>
-<pre><code class="language-sh"><span class="hl-0">yarn</span><span class="hl-1"> </span><span class="hl-2">test:watch</span>
-</code><button>Copy</button></pre>
-<a id="md:code-quality" class="tsd-anchor"></a><h4><a href="#md:code-quality">Code quality</a></h4><p>To run linting the codebase:</p>
-<pre><code class="language-sh"><span class="hl-0">yarn</span><span class="hl-1"> </span><span class="hl-2">lint</span>
-</code><button>Copy</button></pre>
-<p>To check typings:</p>
-<pre><code class="language-sh"><span class="hl-0">yarn</span><span class="hl-1"> </span><span class="hl-2">typecheck</span>
-</code><button>Copy</button></pre>
-<p>To check bundle size:</p>
-<pre><code class="language-sh"><span class="hl-0">yarn</span><span class="hl-1"> </span><span class="hl-2">sizecheck</span>
-</code><button>Copy</button></pre>
-<p>To check licenses:</p>
-<pre><code class="language-sh"><span class="hl-0">yarn</span><span class="hl-1"> </span><span class="hl-2">licenselint</span>
-</code><button>Copy</button></pre>
-<a id="md:publish" class="tsd-anchor"></a><h3><a href="#md:publish">Publish</a></h3><p>To bump version of changed packages and generate changelog run:</p>
-<pre><code class="language-sh"><span class="hl-0">yarn</span><span class="hl-1"> </span><span class="hl-2">release</span>
-</code><button>Copy</button></pre>
-<a id="md:license" class="tsd-anchor"></a><h2><a href="#md:license">License</a></h2><p>MIT</p>
 </section>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
@@ -73,31 +49,20 @@
 <ul>
 <li>
 <ul>
-<li><a href="#md:web-components-tools"><span>Web <wbr/>Components tools</span></a></li>
+<li><a href="#md:scoped-styles"><span>Scoped <wbr/>Styles</span></a></li>
 <li>
 <ul>
-<li><a href="#md:packages"><span>Packages</span></a></li>
-<li><a href="#md:contributing"><span>Contributing</span></a></li>
-<li>
-<ul>
-<li><a href="#md:dev-environment"><span>Dev environment</span></a></li>
-<li>
-<ul>
-<li><a href="#md:start"><span>Start</span></a></li>
-<li><a href="#md:testing"><span>Testing</span></a></li>
-<li><a href="#md:code-quality"><span>Code quality</span></a></li></ul></li>
-<li><a href="#md:publish"><span>Publish</span></a></li></ul></li>
-<li><a href="#md:license"><span>License</span></a></li></ul></li></ul></li></ul></div></details></div>
+<li><a href="#md:install"><span>Install</span></a></li></ul></li></ul></li></ul></div></details></div>
 <div class="site-menu">
 <nav class="tsd-navigation"><a href="../index.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1"></use></svg><span>Documentation</span></a>
 <ul class="tsd-small-nested-navigation" id="tsd-nav-container" data-base="..">
-<li><a href="_rambler_tech_scoped_styles.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>@rambler-tech/scoped-styles - v0.1.0</a></li>
-<li><a href="_rambler_tech_widget_element.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>@rambler-tech/widget-element - v0.1.1</a></li></ul></nav></div></div></div>
+<li><a href="_rambler_tech_scoped_styles.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>@rambler-tech/scoped-styles - v0.2.0</a></li>
+<li><a href="_rambler_tech_widget_element.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>@rambler-tech/widget-element - v0.2.0</a></li></ul></nav></div></div></div>
 <div class="tsd-generator">
 <p style="line-height: 28px;">Generated using <a href="https://typedoc.org/" rel="noopener" target="_blank">TypeDoc</a><br>
             <span id="generation-date"></span>
             <script>
-                window.GENERATION_DATE = 1723537745333;
+                window.GENERATION_DATE = 1723649721864;
 
                 (() => {
                     
