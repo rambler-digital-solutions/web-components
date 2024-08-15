@@ -21,6 +21,8 @@
 <li class="tsd-signature tsd-anchor-link" id="unregisterRoot"><span class="tsd-kind-call-signature">unregister<wbr/>Root</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">root</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#unregisterRoot" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Unregister scoped root and remove styles</p>
+<pre><code class="language-tsx"><span class="hl-5">class</span><span class="hl-1"> </span><span class="hl-6">App</span><span class="hl-1"> </span><span class="hl-5">extends</span><span class="hl-1"> </span><span class="hl-6">HTMLElement</span><span class="hl-1"> {</span><br/><span class="hl-1">  </span><span class="hl-0">disconnectedCallback</span><span class="hl-1">() {</span><br/><span class="hl-1">    </span><span class="hl-0">unregisterRoot</span><span class="hl-1">(</span><span class="hl-5">this</span><span class="hl-1">.</span><span class="hl-3">shadowRoot</span><span class="hl-1">)</span><br/><span class="hl-1">  }</span><br/><span class="hl-1">}</span>
+</code><button>Copy</button></pre>
 </div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
@@ -30,7 +32,7 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/rambler-digital-solutions/web-components/blob/45c267f/packages/scoped-styles/index.ts#L85">index.ts:85</a></li></ul></aside></li></ul></section></div>
+<li>Defined in <a href="https://github.com/rambler-digital-solutions/web-components/blob/b417ef2/packages/scoped-styles/index.ts#L80">index.ts:80</a></li></ul></aside></li></ul></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -52,7 +54,7 @@
 <p style="line-height: 28px;">Generated using <a href="https://typedoc.org/" rel="noopener" target="_blank">TypeDoc</a><br>
             <span id="generation-date"></span>
             <script>
-                window.GENERATION_DATE = 1723712076363;
+                window.GENERATION_DATE = 1723757655005;
 
                 (() => {
                     
